@@ -1,0 +1,46 @@
+package week4;
+
+import java.util.Scanner;
+
+/**
+ *Simulates if the user will have anough gas
+ * @author kristina Snyder
+ */
+public class EnoughGas {
+    public static void main(String[] args) {
+      
+        // create header
+        System.out.println("Do I have enough gas?");
+        
+        // make double variable
+        double gasLeft;
+        double milesLeft;
+        double mpg;
+        
+        
+        // make a new scanner
+        Scanner userInputScanner = new Scanner(System.in);
+        
+        // Ask how much gas  is in the tank
+        System.out.println("How many gallons are left in the tank?");
+        
+        gasLeft = userInputScanner.nextDouble();
+        
+        System.out.println("How many miles until the next gas station?");
+        // input how many miles until the nect station
+        milesLeft = userInputScanner.nextDouble();
+        
+        //calculate is there is enough gas to get to the station
+        if(gasLeft*28>milesLeft){
+        System.out.println("YAY! You have enough gas to make it to the next station!");
+        
+        } else {
+        System.out.println("Oh no!! You better call a cab!");
+            
+        } // close if/else 
+        
+    } // close main method
+            
+    } // close class
+    
+
