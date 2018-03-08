@@ -20,12 +20,13 @@ public class MathQuiz {
         System.out.println("Let's check your math skills!");
         
         Scanner userInputScanner = new Scanner(System.in);
-        int numLoops= 0;
+       
        
             
      
           
-            
+         while(true){
+         
         System.out.println("What is 5+5/2?");
             
         userAnswer = userInputScanner.nextInt();
@@ -35,12 +36,12 @@ public class MathQuiz {
                 
             } else{ 
                 System.out.println("Ohhh nooo try again!!");
-            } // close else
-        
-             
-            
-            
-        }// close main method
                 
-    }// close 
+                
+            } // close else
+            
+         } // close while()loop
+    } // close main method
     
+} // close class 
+            
