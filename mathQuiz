@@ -1,0 +1,46 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package week5;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author ktina
+ */
+public class MathQuiz {
+    
+    public static void main(String[] args) {
+        int userAnswer;
+        int correctAnswer = 5;
+        
+        System.out.println("Let's check your math skills!");
+        
+        Scanner userInputScanner = new Scanner(System.in);
+        int numLoops= 0;
+       
+            
+     
+          
+            
+        System.out.println("What is 5+5/2?");
+            
+        userAnswer = userInputScanner.nextInt();
+        
+            if (userAnswer == correctAnswer) {
+                System.out.println("You're a genious!!");
+                
+            } else{ 
+                System.out.println("Ohhh nooo try again!!");
+            } // close else
+        
+             
+            
+            
+        }// close main method
+                
+    }// close 
+    
