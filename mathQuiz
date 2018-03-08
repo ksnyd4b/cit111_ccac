@@ -16,13 +16,15 @@ public class MathQuiz {
     public static void main(String[] args) {
         int userAnswer;
         int correctAnswer = 5;
-        
+        int numLoops = 0;
+        int attempts = 0;
+        final int attemptsallowed = 3;
         System.out.println("Let's check your math skills!");
         
         Scanner userInputScanner = new Scanner(System.in);
        
        
-            
+        while(numLoops < 3)   
      
           
          while(true){
@@ -36,10 +38,11 @@ public class MathQuiz {
                 
             } else{ 
                 System.out.println("Ohhh nooo try again!!");
-                
+            } if( attempts == attemptsallowed){ 
+                System.out.println("Nice try! The answer is 5!");
                 
             } // close else
-            
+            numLoops = numLoops + 1;
          } // close while()loop
     } // close main method
     
