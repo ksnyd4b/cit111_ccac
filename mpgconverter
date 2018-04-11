@@ -16,15 +16,17 @@ public static void main(String[ ] args)
 
 Scanner keyboard = new Scanner(System.in);
 
-
+// gather info on ho wmany miles 
 System.out.print("How many miles did you drive?");
 int miles;
 miles = keyboard.nextInt();
 
+// gather how much gs was used 
 System.out.print("How many gallons were used?");
 int gallons;
 gallons = keyboard.nextInt();
 
+//create a calculation 
 int mpg;
 mpg = miles / gallons;
 
