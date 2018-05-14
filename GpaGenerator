@@ -1,0 +1,107 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author ktina
+ */
+
+
+import java.util.Scanner;
+public class GpaGenerator {
+public static void main (String args[]){
+
+  String grade = "";
+  double credit1;
+  double credit2;
+  double credit3;
+  double gradeValue=0;
+  double totPtsClass1=0;
+  double totPtsClass2=0;
+  double totPtsClass3=0;
+  double totPts=0;
+  double totalCredits= 0;
+  double gpa;
+
+  //generate it to enter in the grades and and credit amount
+  Scanner console = new Scanner (System.in);
+  System.out.println("Please enter the number of credits of the class 1 (A number)");
+  credit1 = console.nextDouble();
+  System.out.println("Please enter your grades for the class 1(Capital letters only)");
+  grade = console.next();
+ 
+  
+  if (grade.equals ("A"))
+    gradeValue= 4.00;
+  else if (grade.equals("B"))
+    gradeValue = 3.00;
+  else if (grade.equals("C"))
+    gradeValue = 2.00;
+  else if (grade.equals ("D"))
+    gradeValue = 1.00;
+  else if (grade.equals ("F"))
+    gradeValue = 0;
+
+  else
+    System.out.println ("Please enter valid grade");
+ 
+  totPtsClass1 = gradeValue * credit1;
+ 
+  //generate for 2nd class 
+  System.out.println("Please enter the number of credits of the class 2 (A number)");
+  credit2 = console.nextDouble();
+  System.out.println("Please enter your grades for the class 2 (Capital letters only)");
+  grade = console.next();
+ 
+   if (grade.equals ("A"))
+    gradeValue= 4.00;
+  else if (grade.equals("B"))
+    gradeValue = 3.00;
+  else if (grade.equals("C"))
+    gradeValue = 2.00;
+  else if (grade.equals ("D"))
+    gradeValue = 1.00;
+  else if (grade.equals ("F"))
+    gradeValue = 0;
+  
+// if not entered correctly what outputs
+  else
+  System.out.println ("Please enter valid grade");
+
+  totPtsClass2 = gradeValue * credit2;
+ //enter for class 3
+  System.out.println("Please enter the number of credits of the class 3 (A number)");
+  credit3 = console.nextDouble();
+  System.out.println("Please enter your grades for the class 3 (Capital letters only)");
+  grade = console.next();
+ 
+   if (grade.equals ("A"))
+    gradeValue= 4.00;
+  else if (grade.equals("B"))
+    gradeValue = 3.00;
+  else if (grade.equals("C"))
+    gradeValue = 2.00;
+  else if (grade.equals ("D"))
+    gradeValue = 1.00;
+  else if (grade.equals ("F"))
+    gradeValue = 0;
+
+  else
+    System.out.println ("Please enter valid grade");
+ 
+    totPtsClass3 = gradeValue * credit3;
+ 
+  
+ 
+  totPts= totPtsClass1+totPtsClass2+totPtsClass3;
+  totalCredits = credit1+credit2+credit3;
+  gpa= totPts / totalCredits;
+ 
+  System.out.printf("Your GPA is: %.2f\n", + gpa);
+}
+}
+    
+
